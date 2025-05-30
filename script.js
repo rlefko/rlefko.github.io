@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchGitHubRepos();
 
   async function fetchGitHubRepos() {
-    const username = "rlefkowitz"; // Your GitHub username
+    const username = "rlefko"; // Your GitHub username
     const repoContainer = document.getElementById("projects-container");
     try {
       const response = await fetch(
