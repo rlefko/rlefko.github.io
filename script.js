@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize AOS with faster animations
   AOS.init({
-    duration: 800, // Reduced from 1000ms to 800ms
+    duration: 800, 
     once: true,
   });
 
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const progressBar = progress.querySelector(".progress-bar");
     const color = progress.getAttribute("data-color");
     progressBar.style.backgroundColor = color;
-    // Trigger the animation
     setTimeout(() => {
       progressBar.style.width = progressBar.style.width;
     }, 300);
@@ -31,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchGitHubRepos();
 
   async function fetchGitHubRepos() {
-    const username = "rlefko"; // Your GitHub username
+    const username = "rlefko";
     const repoContainer = document.getElementById("projects-container");
     try {
       const response = await fetch(
@@ -44,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       repos.forEach((repo) => {
         // Determine project color based on primary language
-        let projectColor = "#007acc"; // Default color
+        let projectColor = "#007acc";
         if (repo.language) {
           projectColor = getColorForLanguage(repo.language);
         }
@@ -92,19 +90,16 @@ document.addEventListener("DOMContentLoaded", () => {
       SQL: "#e38c00",
       OCaml: "#3be133",
       Ruby: "#701516",
-      // Add more languages and their colors as needed
     };
-    return colors[language] || "#007acc"; // Default color
+    return colors[language] || "#007acc";
   }
 
   // Function to get icons based on repository topics or languages
   function getIconsForRepo(repo) {
     const icons = [];
-    // Use primary language
     if (repo.language) {
       icons.push(getIconClass(repo.language));
     }
-    // Add icons based on topics
     if (repo.topics && repo.topics.length > 0) {
       repo.topics.slice(0, 2).forEach((topic) => {
         const topicIcon = getIconClass(topic);
@@ -113,18 +108,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     }
-    // Add a generic code icon if no specific icons found
     if (icons.length === 0) {
       icons.push("fas fa-code");
     }
 
-    return icons.slice(0, 3); // Limit to 3 icons
+    return icons.slice(0, 3);
   }
 
   // Function to map language or topic to Font Awesome or Devicons icon classes
   function getIconClass(name) {
     const mapping = {
-      // Languages
       Python: "devicon-python-plain colored",
       JavaScript: "devicon-javascript-plain colored",
       TypeScript: "devicon-typescript-plain colored",
@@ -153,9 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "OpenAI API": "fab fa-openai", // Font Awesome brand icon
       TFLite: "fas fa-robot", // Using Font Awesome
       "Jira API": "fas fa-project-diagram", // Using Font Awesome
-      // Add more mappings as needed
     };
-    return mapping[name] || "fas fa-code"; // Default to code icon
+    return mapping[name] || "fas fa-code";
   }
 
   // Modal Functionality
