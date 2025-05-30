@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ryan Lefkowitz | Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Devicons for Technology Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- AOS Library for Animations on Scroll -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- WebGL Background -->
+    <canvas id="webgl-background"></canvas>
+
+    <header id="home">
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content" data-aos="fade-in">
+            <h1>Ryan Lefkowitz</h1>
+            <p>🚀 Building tools, solving puzzles, and inspiring fellow devs.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" data-aos="fade-up">
+            <p>
+                👋 Hi there! I'm <strong>Ryan Lefkowitz</strong>, a 24-year-old Software Engineer based in 🗽 <a href="https://en.wikipedia.org/wiki/New_York_City" target="_blank">New York City</a>, currently working at <strong><a href="https://www.greystoneengineering.com/" target="_blank">Greystone Engineering</a></strong>.
+            </p>
+            <p>
+                <strong>✨ A Lifelong Curiosity</strong><br>
+                I've been driven by an endless curiosity for all things <a href="https://en.wikipedia.org/wiki/STEM" target="_blank">STEM</a> and how the world works. My journey into programming began at age 14, writing programs in <a href="https://en.wikipedia.org/wiki/TI-BASIC" target="_blank">TI-Basic</a> on my calculator. Over time, I explored <a href="https://developer.mozilla.org/docs/Web/HTML" target="_blank">HTML</a>, fell in love with <a href="https://www.java.com/" target="_blank">Java</a>, and later delved into <a href="https://en.wikipedia.org/wiki/Computer_graphics" target="_blank">computer graphics</a> and problems involving <a href="https://en.wikipedia.org/wiki/Mathematics" target="_blank">math</a> and <a href="https://en.wikipedia.org/wiki/Optimization_(mathematics)" target="_blank">optimization</a>.
+            </p>
+            <p>
+                <strong>🎓 Education</strong><br>
+                <img src="assets/cornell.svg" alt="Cornell University Seal" class="university-logo">
+                <a href="https://www.cornell.edu/" target="_blank">Cornell University</a> (Class of 2022)
+                <ul>
+                    <li>Bachelor of Science in Computer Science</li>
+                    <li>Researcher under <a href="https://cs.cornell.edu/faculty/steve-marschner" target="_blank">Dr. Steve Marschner</a></li>
+                    <li>Developed a hardware-accelerated <a href="https://en.wikipedia.org/wiki/Path_tracing" target="_blank">OpenCL + C++ path tracer</a></li>
+                </ul>
+            </p>
+            <p>
+                <strong>🛠️ My Expertise</strong><br>
+                Over the years, I've gained hands-on experience across various technologies and tools:
+                <ul>
+                    <li><strong>Frontend</strong>: <i class="devicon-react-original colored"></i> <a href="https://reactjs.org/" target="_blank">React</a>, <i class="devicon-vite-plain colored"></i> <a href="https://vitejs.dev/" target="_blank">Vite</a>, <i class="devicon-typescript-plain colored"></i> <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>, <i class="devicon-react-original colored"></i> <a href="https://reactnative.dev/" target="_blank">React Native</a></li>
+                    <li><strong>Backend</strong>: <i class="devicon-fastapi-plain colored"></i> <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a>, <i class="devicon-uvicorn-plain colored"></i> <a href="https://www.uvicorn.org/" target="_blank">Uvicorn</a>, <i class="devicon-alembic-plain colored"></i> <a href="https://alembic.sqlalchemy.org/" target="_blank">Alembic</a></li>
+                    <li><strong>DevOps</strong>: <img src="assets/nginx.svg" alt="Nginx Logo" class="tech-icon"> <a href="https://www.nginx.com/" target="_blank">Nginx</a>, <i class="devicon-docker-plain colored"></i> <a href="https://www.docker.com/" target="_blank">Docker</a>, <i class="devicon-git-plain colored"></i> <a href="https://git-scm.com/" target="_blank">Git</a>, <i class="devicon-github-original colored bw-icon"></i> <a href="https://github.com/" target="_blank">GitHub</a>, <i class="devicon-azure-plain colored"></i> <a href="https://azure.microsoft.com/en-us/services/" target="_blank">Azure Portal</a>, <img src="assets/datadog.svg" alt="Datadog Logo" class="tech-icon"> <a href="https://www.datadoghq.com/" target="_blank">DataDog</a></li>
+                    <li><strong>Languages</strong>: <i class="devicon-python-plain colored"></i> <a href="https://www.python.org/" target="_blank">Python</a>, <i class="devicon-javascript-plain colored"></i> <a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank">JavaScript</a>, <i class="devicon-typescript-plain colored"></i> <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>, <i class="devicon-cplusplus-plain colored"></i> <a href="https://isocpp.org/" target="_blank">C++</a>, <i class="devicon-java-plain colored"></i> <a href="https://www.java.com/" target="_blank">Java</a>, <i class="devicon-bash-plain colored bw-icon"></i> <a href="#" target="_blank">Bash</a>, <i class="devicon-c-plain colored"></i> <a href="#" target="_blank">C</a>, <i class="devicon-html5-plain colored"></i> <a href="https://developer.mozilla.org/docs/Web/HTML" target="_blank">HTML</a>, <i class="devicon-css3-plain colored"></i> <a href="https://developer.mozilla.org/docs/Web/CSS" target="_blank">CSS</a>, <i class="devicon-sql-plain colored"></i> <a href="#" target="_blank">SQL</a>, <i class="devicon-ocaml-plain colored"></i> <a href="https://ocaml.org/" target="_blank">OCaml</a>, <i class="devicon-ruby-plain colored"></i> <a href="https://www.ruby-lang.org/en/" target="_blank">Ruby</a></li>
+                    <li><strong>Testing</strong>: Unit and integration tests</li>
+                </ul>
+            </p>
+            <p>
+                <strong>🚀 Always Learning</strong><br>
+                I thrive on tackling new challenges and learning from every project I work on. Whether it's mastering a new tool, optimizing a workflow, or helping a fellow dev, I'm always eager to contribute.
+            </p>
+            <p>
+                <strong>🌟 Let's Connect</strong><br>
+                Check out my projects here on <a href="https://github.com/rlefkowitz" target="_blank">GitHub</a> and feel free to reach out—I’d love to collaborate!
+            </p>
+        </section>
+
+        <section id="skills" data-aos="fade-up">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <!-- Master Skills -->
+                <div class="skill">
+                    <h3><i class="devicon-python-plain colored"></i> <a href="https://www.python.org/" target="_blank">Python</a></h3>
+                    <div class="progress" data-color="#3776AB">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-javascript-plain colored"></i> <a href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank">JavaScript</a></h3>
+                    <div class="progress" data-color="#f1e05a">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-typescript-plain colored"></i> <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a></h3>
+                    <div class="progress" data-color="#3178C6">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-cplusplus-plain colored"></i> <a href="https://isocpp.org/" target="_blank">C++</a></h3>
+                    <div class="progress" data-color="#f34b7d">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-java-plain colored"></i> <a href="https://www.java.com/" target="_blank">Java</a></h3>
+                    <div class="progress" data-color="#b07219">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-bash-plain colored bw-icon"></i> <a href="#" target="_blank">Bash</a></h3>
+                    <div class="progress" data-color="#4EAA25">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-c-plain colored"></i> <a href="#" target="_blank">C</a></h3>
+                    <div class="progress" data-color="#00599C">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <!-- Expert Skills -->
+                <div class="skill">
+                    <h3><i class="devicon-react-original colored"></i> <a href="https://reactjs.org/" target="_blank">React</a></h3>
+                    <div class="progress" data-color="#61DAFB">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-docker-plain colored"></i> <a href="https://www.docker.com/" target="_blank">Docker</a></h3>
+                    <div class="progress" data-color="#0db7ed">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-git-plain colored"></i> <a href="https://git-scm.com/" target="_blank">Git</a></h3>
+                    <div class="progress" data-color="#F05032">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-github-original colored bw-icon"></i> <a href="https://github.com/" target="_blank">GitHub</a></h3>
+                    <div class="progress" data-color="#181717">
+                        <div class="progress-bar outlined" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="fas fa-server"></i> <a href="https://www.uvicorn.org/" target="_blank">Uvicorn</a></h3>
+                    <div class="progress" data-color="#00C7B7">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-fastapi-plain colored"></i> <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a></h3>
+                    <div class="progress" data-color="#009688">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-postgresql-plain colored"></i> <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a></h3>
+                    <div class="progress" data-color="#336791">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-mongodb-plain colored"></i> <a href="https://www.mongodb.com/" target="_blank">MongoDB</a></h3>
+                    <div class="progress" data-color="#00ed64">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-sqlite-plain colored"></i> <a href="https://www.sqlite.org/" target="_blank">SQLite</a></h3>
+                    <div class="progress" data-color="#003B57">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-githubactions-plain colored"></i> <a href="https://github.com/features/actions" target="_blank">GitHub CI</a></h3>
+                    <div class="progress" data-color="#2088FF">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-azure-plain colored"></i> <a href="https://azure.microsoft.com/en-us/services/" target="_blank">Azure CDN</a></h3>
+                    <div class="progress" data-color="#008AD7">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><img src="assets/nginx.svg" class="tech-icon" /> <a href="https://www.nginx.com/" target="_blank">Nginx</a></h3>
+                    <div class="progress" data-color="#43A047">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <!-- Decent Skills -->
+                <div class="skill">
+                    <h3>
+                        <img src="assets/openai.svg" alt="OpenAI Logo" class="tech-icon bw-icon">
+                        <a href="https://openai.com/" target="_blank">OpenAI API</a>
+                    </h3>
+                    <div class="progress" data-color="#10A37F">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-tensorflow-original colored"></i> <a href="#" target="_blank">TFLite</a></h3>
+                    <div class="progress" data-color="#4F8BFF">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-jira-plain colored"></i> <a href="#" target="_blank">Jira API</a></h3>
+                    <div class="progress" data-color="#2684FF">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3><i class="devicon-ocaml-plain colored"></i> <a href="https://ocaml.org/" target="_blank">OCaml</a></h3>
+                    <div class="progress" data-color="#3be133">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" data-aos="fade-up">
+            <h2>Projects</h2>
+            <div id="projects-container" class="projects-grid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Blog section (optional) -->
+        <section id="blog" data-aos="fade-up">
+            <h2>Blog</h2>
+            <p>📚 Coming soon...</p>
+        </section>
+       
+
+        <section id="contact" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p>🤝 Let’s collaborate!</p>
+            <ul class="contact-links">
+                <li><a href="mailto:rlefkowitz1800@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                <li><a href="https://github.com/rlefkowitz" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                <li><a href="https://linkedin.com/in/rlefko" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>“I hope my projects inspire, and I hope I can lend a hand to my fellow devs.”</p>
+        <p>&copy; 2024 <a href="https://github.com/rlefkowitz" target="_blank">Ryan Lefkowitz</a></p>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close" class="close">&times;</span>
+            <h3 id="modal-title">Project Title</h3>
+            <p id="modal-description">Project Description</p>
+            <div id="modal-icons" class="modal-icons">
+                <!-- Framework/Language Icons -->
+            </div>
+            <a id="modal-link" href="#" target="_blank" class="modal-button">View Repository</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- AOS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Three.js for WebGL Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
